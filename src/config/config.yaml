@@ -14,13 +14,24 @@ split:
 
 model:
   name: logistic_regression
-  params:
+
+  logistic_regression:
     l1_ratio: 0
     max_iter: 100
     solver: lbfgs
 
+  knn:
+    n_neighbors: 5
+    weights: uniform
+    metric: minkowski
+
+  svm:
+    kernel: rbf
+    C: 1.0
+    gamma: scale
+
 artifacts:
-  model_path: models_artifacts/final/model.joblib
+  model_dir: models_artifacts/final/
 
 reports:
   results_path: reports/results.md

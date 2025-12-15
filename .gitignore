@@ -1,0 +1,67 @@
+# =============================
+# Python
+# =============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =============================
+# Virtual Environment
+# =============================
+.venv/
+venv/
+ENV/
+
+# =============================
+# Data & Processed Files
+# =============================
+/data/processed/*.csv
+
+# =============================
+# Model Artifacts & Checkpoints
+# =============================
+/experiments/*/checkpoints/
+/models_artifacts/
+/model.joblib
+
+# =============================
+# Jupyter Notebooks Output
+# =============================
+*.ipynb_checkpoints
+
+# =============================
+# IDE & Editor
+# =============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+
+# =============================
+# OS & Build Artifacts
+# =============================
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# =============================
+# Requirements & Lock Files (Opsional)
+# =============================
+# Jika ingin mengabaikan lock file (misal: Pipfile.lock, poetry.lock, dll)
+# Pipfile.lock
+# poetry.lock
+
+# =============================
+# Reports & Logs
+# =============================
+/reports/
+/logs/
+
+# =============================
+# Miscellaneous
+# =============================
+*.csv  # Hati-hati! Ini akan mengabaikan SEMUA file CSV di repo.
+        # Jika hanya ingin mengabaikan CSV di processed, cukup gunakan baris di atas (/data/processed/)
+        # Jadi komentar ini saja dulu, atau hapus jika tidak perlu.

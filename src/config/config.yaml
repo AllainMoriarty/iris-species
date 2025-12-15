@@ -1,0 +1,26 @@
+project:
+  name: iris_traditional_ml
+  random_seed: 42
+
+data:
+  raw_path: data/raw/iris.csv
+  processed_dir: data/processed
+  target_column: Species
+
+split:
+  train_size: 0.7
+  val_size: 0.2
+  test_size: 0.1
+
+model:
+  name: logistic_regression
+  params:
+    l1_ratio: 0
+    max_iter: 100
+    solver: lbfgs
+
+artifacts:
+  model_path: models_artifacts/final/model.joblib
+
+reports:
+  results_path: reports/results.md
